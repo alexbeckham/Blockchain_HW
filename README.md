@@ -31,15 +31,15 @@ Network Name: Homeworknetwork
 # Code 
 ## Initialize Nodes: 
 
-./geth --datadir node1 init networkname.json
+./geth --datadir node1hw init homeworknetwork.json
 
-./geth --datadir node2 init networkname.json
+./geth --datadir node2hw init homeworknetwork.json
 
 ## Launch Nodes:
 
-./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock
+./geth --datadir node1hw --unlock "0xc94436665eFAB753B643Fd90fF1C24B3A3CBbEb1" --mine --rpc --allow-insecure-unlock
 
-./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
+./geth --datadir node2hw --unlock "0x89b1E3126132DA8a3fE93FCFee20BD86aA3BDf0B" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
 
 # Connect MyCrypto
 
